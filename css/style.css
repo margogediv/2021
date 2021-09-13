@@ -1,0 +1,249 @@
+:root {
+  --default: "Lato", sans-serif;
+  --color-default: #666666;
+  --background: #A2D1F0;
+  --h-color: #072a40;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--default);
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1150px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.wrapper-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px 1fr;
+  grid-template-columns: 320px 1fr;
+}
+.wrapper-grid__first {
+  background-color: var(--background);
+}
+.wrapper-grid__second {
+  background-color: #dff0f8;
+}
+
+.data__section {
+  padding: 0 30px;
+}
+.data__title {
+  margin: 0 0 24px;
+  position: relative;
+  font-size: 24px;
+  color: var(--h-color);
+  text-transform: uppercase;
+}
+.data__title::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  display: block;
+  width: 40%;
+  height: 2px;
+  background-color: var(--h-color);
+}
+
+.name {
+  margin-bottom: 30px;
+}
+.name img {
+  width: 320px;
+  height: 400px;
+}
+.name__box {
+  margin: 0;
+  padding: 20px;
+}
+.name__title {
+  color: var(--h-color);
+  margin: 0 0 5px;
+}
+.name__subtitle {
+  margin: 0;
+  font-weight: 300;
+}
+
+.contact {
+  margin-bottom: 40px;
+}
+.contact__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__item::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: #355b9f;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact__item a {
+  color: var(--h-color);
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.contact__item a:hover {
+  color: #236eae;
+}
+.contact__item_phone::before {
+  background-image: url("../svg/phone.svg");
+}
+.contact__item_mail::before {
+  background-image: url("../svg/email.svg");
+}
+.contact__item_telegram::before {
+  background-image: url("../svg/telegramm.svg");
+}
+.contact__item_in::before {
+  background-image: url("../svg/ln.svg");
+}
+.contact__item:last-child {
+  margin-bottom: 0;
+}
+
+.skills {
+  margin-bottom: 40px;
+}
+.skills__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.skills__item {
+  margin: 0 0 12px;
+}
+.skills__item:last-child {
+  margin-bottom: 0;
+}
+
+.languages__list {
+  margin: 0;
+  padding-left: 15px;
+}
+.languages__item {
+  margin: 0 0 12px;
+}
+.languages__item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+
+.about {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.about__text {
+  line-height: 1.5;
+}
+
+.education {
+  margin-bottom: 50px;
+}
+
+.courses {
+  margin-bottom: 50px;
+}
+.courses__item {
+  margin-bottom: 12px;
+}
+
+.code {
+  margin-bottom: 50px;
+}
+.code__text {
+  padding: 20px;
+  background-color: #a2d1f0;
+}
+
+.icon__box a {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: 110px;
+  background-image: url("../svg/rs_school.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: #236eae;
+  color: #a2d1f0;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+.footer__item a {
+  color: #a2d1f0;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.footer__item a:hover {
+  color: #236eae;
+}
